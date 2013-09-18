@@ -133,7 +133,7 @@ module Hyperclient
 
       it 'defaults params to an empty hash' do
         entry_point.connection.expects(:post).with('/productions/1', {})
-        link.post
+        link.post.inspect
       end
     end
 
@@ -147,7 +147,7 @@ module Hyperclient
 
       it 'defaults params to an empty hash' do
         entry_point.connection.expects(:put).with('/productions/1', {})
-        link.put
+        link.put.inspect
       end
     end
 
@@ -161,7 +161,7 @@ module Hyperclient
 
       it 'defaults params to an empty hash' do
         entry_point.connection.expects(:patch).with('/productions/1', {})
-        link.patch
+        link.patch.inspect
       end
     end
 
